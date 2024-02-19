@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./Search.svg";
+import LogoIcon from "./Logo.svg";
 import "./App.css";
 
 const API_URL = 'http://www.omdbapi.com?apikey=f3bb1786';
@@ -24,6 +25,11 @@ const App = () => {
 
     return (
         <div className="app">
+            <img 
+                src={LogoIcon}
+                alt="Search"
+                height={80}
+            />
             <h1>Movizz</h1>
 
             <div className="search">
